@@ -1,18 +1,23 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
+
 import Hero from './components/Hero';
 import Header from './components/Header';
+import Dashboard from './components/Dashboard';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <Header />
+      
+      <Switch>
 
-        <Header />
+        <Route path='/' exact component={Hero} />
+        
+        <Route path='/dashboard' component={Dashboard} />
 
-        <Hero />
-
-      </div>
+      </Switch>
     </div>
   );
 }
