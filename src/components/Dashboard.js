@@ -1,19 +1,31 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 export default function Dashboard() {
+
   return (
-    <div className='admin-dashboard'>
+    <div className='admin-container'>
       
       <div className='panel'>
         <h1 className='title'>Admin Dashboard</h1>
         <div className='content'>
-          <div className='clients'>
+          <div className='clients column'>
             <h2>Clients</h2>
-            <button className='hero-btn'>See all</button>
+            <NavLink
+              to='/clients'
+              className='Nav-Link dashlink'
+              >
+              See all
+            </NavLink>
           </div>
-          <div className='exers'>
+          <div className='exers column'>
             <h2>Exercises</h2>
-            <button className='hero-btn'>See all</button>
+            <NavLink
+              to='/exers'
+              className='Nav-Link dashlink'
+              >
+              See all
+            </NavLink>
           </div>
         </div>
       </div>

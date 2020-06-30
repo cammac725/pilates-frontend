@@ -1,11 +1,12 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 
 function Hero() {
   return (
     <div className='hero'>
-      <button className='hero-btn'>Admin portal</button>
-      <button className='hero-btn'>User portal</button>
+      <NavLink to='./dashboard' className='Nav-Link'>Admin portal</NavLink>
+      <NavLink to='#' className='Nav-Link'>User portal</NavLink>
     </div>
   )
 }
