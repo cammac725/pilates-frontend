@@ -22,12 +22,6 @@
   color: #fff;
 }
 
-/* .container {
-  width: 80%;
-  margin: 0 auto;
-  background: #fff;
-} */
-
 .hero { 
   height: 100vh;
   background-image: url('./assets/hero.webp');
@@ -69,6 +63,7 @@
   margin: 0 auto;
   position: absolute;
   width: 100%;
+  max-height: 1200px;
 }
 
 .panel {
@@ -77,19 +72,20 @@
   justify-content: flex-start;
   background: #f2f2f2;
   margin: 5% 25%;
-  height: 80vh;
+  height: 100vh;
   border-radius: 20px;
   animation: fade-panel 1s;
 }
 
 .title {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .content {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  margin-top: 5%;
 }
 
 .column {
@@ -98,16 +94,30 @@
 
 .dashlink {
   padding: 2% 20%;
-  transition: all .5s ease;
-}
-
-.dashlink:hover {
-  transform: scale(1.3);
 }
 
 @keyframes fade-panel {
   0% {opacity: 0; transform: scale(0);}
   100% {opacity: 1; transform: scale(1);}
+}
+
+/* Clients component */
+
+.clients-list {
+  width: 75%;
+  margin: 2% auto;
+}
+
+.clients-list li {
+  margin-bottom: 3%;
+}
+
+.clients-list .client-link {
+  margin-bottom: 3%;
+}
+
+.add-link {
+  margin: 5% auto;
 }
 
 /* Add Client form */
@@ -120,6 +130,7 @@
   margin: 0 auto;
   position: absolute;
   width: 100%;
+  max-height: 1400px;
 }
 
 .form-wrap {
@@ -128,7 +139,7 @@
   justify-content: flex-start;
   background: #f2f2f2;
   margin: 5% 25%;
-  height: 80vh;
+  height: 100vh;
   border-radius: 20px;
   animation: fade-panel 1s;
 }
@@ -137,6 +148,10 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3%;
+}
+
+.top-add input {
+  width: 30%;
 }
 
 @media only screen and (max-width: 1160px) {
@@ -155,7 +170,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 5% 10%;
+  margin: 1% 10%;
 }
 
 .content-add label {
@@ -164,4 +179,8 @@
 
 .content-add textarea {
   margin-bottom: 2%;
+}
+
+.date-label {
+  margin-left: 1%;
 }

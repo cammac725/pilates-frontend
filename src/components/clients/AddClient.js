@@ -3,7 +3,7 @@ import React from 'react'
 export default function AddClient() {
   return (
     <div className='wrapper'>
-      <div className='form-wrap'>
+      <div className='form-wrap panel'>
         <h1 className='title'>Add a new client</h1>
         <form className='input-form'>
           <section className='top-add'>
@@ -29,7 +29,7 @@ export default function AddClient() {
               type='date'
               name='dob'
             />
-            <label for='date'>Date</label>
+            <label for='date' className='date-label'>Date</label>
             <input
               type='date'
               name='date'
