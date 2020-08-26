@@ -144,18 +144,18 @@
   animation: fade-panel 1s;
 }
 
-.top-add {
+.top-section {
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 3%;
 }
 
-.top-add input {
+.top-section input {
   width: 30%;
 }
 
 @media only screen and (max-width: 1160px) {
-  .top-add {
+  .top-section {
     flex-direction: column;
     align-items: center;
   }
@@ -166,18 +166,18 @@
   }
 }
 
-.content-add {
+.content-section {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   margin: 1% 10%;
 }
 
-.content-add label {
+.content-section label {
   text-align: left;
 }
 
-.content-add textarea {
+.content-section textarea {
   margin-bottom: 2%;
 }
 

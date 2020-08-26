@@ -7,6 +7,7 @@ import Header from './components/Header';
 import Dashboard from './components/Dashboard';
 import AddClient from './components/clients/AddClient';
 import Clients from './components/clients/Clients';
+import Client from './components/clients/Client';
 import Exers from './components/exercises/Exers';
 
 import './App.css';
@@ -42,6 +43,7 @@ class App extends Component {
             render={props =>
               <Clients {...props} clients={this.state.clients} />}
             />
+          <Route path="/client" component={Client} />
           <Route path='/add-client' component={AddClient} />
           <Route path='/exers' component={Exers} />
   

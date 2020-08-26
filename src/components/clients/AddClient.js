@@ -6,12 +6,12 @@ export default function AddClient() {
       <div className="form-wrap panel">
         <h1 className="title">Add a new client</h1>
         <form type="submit" className="input-form">
-          <section className="top-add">
+          <section className="top-section">
             <input type="text" name="first_name" placeholder="First name" />
             <input type="text" name="last_name" placeholder="Last name" />
             <input type="email" name="email" placeholder="Email address" />
           </section>
-          <section className="date-add">
+          <section className="date-section">
             <label htmlFor="dob">DOB</label>
             <input type="date" name="dob" />
             <label htmlFor="date" className="date-label">
@@ -20,7 +20,7 @@ export default function AddClient() {
             <input type="date" name="date" />
           </section>
 
-          <section className="content-add">
+          <section className="content-section">
             <label htmlFor="occupation">Occupation/Sports/Hobbies</label>
             <textarea id="occupation" name="occupation" rows="3" columns="10" />
             <label htmlFor="medical">Medical/Injuries</label>

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
+;
 
 class Clients extends Component {
 
@@ -9,7 +10,7 @@ class Clients extends Component {
         <div className='panel'>
           <h1 className='title'>Client list</h1>
           <div className='clients-list'>
-            {this.props.clients.map((client, key) =>{
+            {this.props.clients.map(client =>{
               return (
 
                 <ul className='list-group client-list' key={client.id}>
